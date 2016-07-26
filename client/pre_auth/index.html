@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="./public/node_modules/angular/angular.min.js"></script>
+    <script src="./public/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+    <script src="./public/components/login/login.component.js"></script>
+    <script src="./public/components/register/register.component.js"></script>
+
+    <script src="./public/pre_auth/index.js"></script>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body ng-app="preAuthApp">
+<h1>Home</h1>
+<a ui-sref="login">Login</a>
+<a ui-sref="register">Register</a>
+
+<div ui-view></div>
+</body>
+
+</html>

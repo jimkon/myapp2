@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="./public/node_modules/angular/angular.min.js"></script>
+    <script src="./public/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="./public/components/profile/profile.component.js"></script>
+    <script src="./public/components/modify/modify.component.js"></script>
+    <script src="./public/components/logout/logout.component.js"></script>
+
+    <script src="./public/auth/index.js"></script>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body ng-app="authApp">
+<h1>User</h1>
+<a ui-sref="modify">Modify</a>
+<a ui-sref="logout">Logout</a>
+<div ui-view></div>
+</body>
+</html>

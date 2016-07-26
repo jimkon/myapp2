@@ -2,7 +2,7 @@
   "name": "my_app",
   "version": "1.0.0",
   "engines": {  
-        "node": "0.6.20"  
+        "node": "6.3.0"  
     } , 
   "description": "server side",
   "main": "app.js",

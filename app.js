@@ -50,6 +50,7 @@ app.get('/*', (req, res) => {
 
 //Start the app
 mongoose.connection.once('open', () => {
-    app.listen(3000);
-    console.log('Listening at 3000');
+	const port = process.env.PORT || 3000;
+    app.listen(port);
+    console.log('Listening at '+port);
 });

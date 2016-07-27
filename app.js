@@ -7,14 +7,20 @@ const passport = require('passport');
 const flash = require("connect-flash");
 const session = require('express-session');
 
-mongoose.connect('mongodb://localhost:27017/db_name', function (err) {
+/*mongoose.connect('mongodb://localhost:27017/db_name', function (err) {
+    if (err) {
+        console.error(err, 'Error while connecting mongoose');
+    } else {
+        console.log('Successful mongoose connection');
+    }
+});*/
+mongoose.connect('mongodb://dimitris:dimitris@ds031948.mlab.com:31948/testdb_ctek', function (err) {
     if (err) {
         console.error(err, 'Error while connecting mongoose');
     } else {
         console.log('Successful mongoose connection');
     }
 });
-
 
 
 //Load Middleware
